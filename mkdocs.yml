@@ -8,6 +8,10 @@ nav:
     - 书籍阅读简介: book_read/index.md
   - 日常生活: 
     - 日常生活简介: daily_life/index.md
+  - 杂记:
+    - 杂记简介: miscellany/index.md
+    - HR面汇总: miscellany/the_hr_interview.md
+    - HR面谈薪资: miscellany/talks_about_salary.md
   - About: about.md
 #theme: readthedocs  
 theme:
