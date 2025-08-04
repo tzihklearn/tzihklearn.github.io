@@ -1,5 +1,44 @@
 site_name: My Docs
 nav:
-  - Home: index.md
+  - 主页: index.md
+  - 技术学习: technology_learn/index.md
+  - 书籍阅读: book_read/index.md
+  - 日常生活: daily_life/index.md
   - About: about.md
 #theme: readthedocs  
+theme:
+  name: material
+  custom_dir: 'mkdocs-material/material/templates'
+  static_templates:
+    - 404.html
+  language: 'zh'
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  include_search_page: false  # 不单独生成搜索结果页（依赖主题内置搜索）
+  search_index_only: true  # 搜索仅索引内容，可能提升性能
+  #favicon: 'favicon.ico'
+  icon:
+    logo: 'material/school'
+  features:  # 启用的主题功能
+    - content.action.edit  # 显示“编辑本页”按钮（需结合仓库地址配置）
+    - navigation.tabs      # 导航栏 tabs 功能（多页面分组显示）
+    - navigation.instant   # 页面切换无刷新（Instant Loading 增强体验）
+  font:
+    text: 'Fira Sans'
+    code: 'Fira Mono'
