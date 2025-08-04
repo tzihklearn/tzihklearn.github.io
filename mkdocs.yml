@@ -1,14 +1,18 @@
 site_name: My Docs
 nav:
-  - 主页: index.md
-  - 技术学习: technology_learn/index.md
-  - 书籍阅读: book_read/index.md
-  - 日常生活: daily_life/index.md
+  - 主页:
+    - 欢迎来到我的博客: index.md
+  - 技术学习: 
+    - 技术学习简介: technology_learn/index.md
+  - 书籍阅读: 
+    - 书籍阅读简介: book_read/index.md
+  - 日常生活: 
+    - 日常生活简介: daily_life/index.md
   - About: about.md
 #theme: readthedocs  
 theme:
   name: material
-  custom_dir: 'mkdocs-material/material/templates'
+  #custom_dir: 'mkdocs-material/material/templates'
   static_templates:
     - 404.html
   language: 'zh'
@@ -39,6 +43,7 @@ theme:
     - content.action.edit  # 显示“编辑本页”按钮（需结合仓库地址配置）
     - navigation.tabs      # 导航栏 tabs 功能（多页面分组显示）
     - navigation.instant   # 页面切换无刷新（Instant Loading 增强体验）
+   # - navigation.indexes   # 章节索引页，文档可以直接附加到章节
   font:
     text: 'Fira Sans'
     code: 'Fira Mono'
