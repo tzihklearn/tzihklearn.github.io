@@ -1,4 +1,19 @@
 site_name: My Docs
+#nav:
+#  - 主页:
+#    - 欢迎来到我的博客: index.md
+#  - 技术学习: 
+#    - 技术学习简介: technology_learn/index.md
+#  - 书籍阅读: 
+#    - 书籍阅读简介: book_read/index.md
+#  - 日常生活: 
+#    - 日常生活简介: daily_life/index.md
+#  - 杂记:
+#    - 杂记简介: miscellany/index.md
+#    - HR面汇总: miscellany/the_hr_interview.md
+#    - HR面谈薪资: miscellany/talks_about_salary.md
+#  - About: about.md
+
 nav:
   - 主页:
     - 欢迎来到我的博客: index.md
@@ -12,8 +27,12 @@ nav:
     - 杂记简介: miscellany/index.md
     - HR面汇总: miscellany/the_hr_interview.md
     - HR面谈薪资: miscellany/talks_about_salary.md
+    - 克制消费: miscellany/restrain_consumption.md
   - About: about.md
-#theme: readthedocs  
+#nav:
+#  - Blog:
+#    - index.md
+
 theme:
   name: material
   #custom_dir: 'mkdocs-material/material/templates'
@@ -51,3 +70,6 @@ theme:
   font:
     text: 'Fira Sans'
     code: 'Fira Mono'
+
+plugins:
+  - blog # 设置博客插件  
