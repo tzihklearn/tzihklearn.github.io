@@ -15,23 +15,9 @@ site_name: My Docs
 #  - About: about.md
 
 nav:
-  - 主页:
-    - 欢迎来到我的博客: index.md
-  - 技术学习: 
-    - 技术学习简介: technology_learn/index.md
-  - 书籍阅读: 
-    - 书籍阅读简介: book_read/index.md
-  - 日常生活: 
-    - 日常生活简介: daily_life/index.md
-  - 杂记:
-    - 杂记简介: miscellany/index.md
-    - HR面汇总: miscellany/the_hr_interview.md
-    - HR面谈薪资: miscellany/talks_about_salary.md
-    - 克制消费: miscellany/restrain_consumption.md
-  - About: about.md
-#nav:
-#  - Blog:
-#    - index.md
+  - index.md
+  - Blog:
+    - blog/index.md
 
 theme:
   name: material
@@ -67,9 +53,19 @@ theme:
     - navigation.tabs      # 导航栏 tabs 功能（多页面分组显示）
     - navigation.instant   # 页面切换无刷新（Instant Loading 增强体验）
    # - navigation.indexes   # 章节索引页，文档可以直接附加到章节
+    - search.suggest       # 搜索建议，搜索将显示最后一个单词最可能的补全，疑似不起作用
+    - search.highlight     # 搜索突出显示，高亮搜索关键词
   font:
     text: 'Fira Sans'
     code: 'Fira Mono'
 
 plugins:
-  - blog # 设置博客插件  
+  # 设置内置搜索插件
+  - search
+  # 设置内置博客插件
+  - blog:
+     categories_allowed:
+       - 技术学习
+       - 书籍阅读
+       - 日常生活
+       - 杂记          
