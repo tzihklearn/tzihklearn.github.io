@@ -1,0 +1,6 @@
+[submodule "demius"]
+	path = demius
+	url = git@github.com:demius782/demius.git
+[submodule "themes/demius"]
+	path = themes/demius
+	url = git@github.com:demius782/demius.git
